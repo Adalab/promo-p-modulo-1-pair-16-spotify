@@ -10,6 +10,9 @@ h1 {
   font-family: var(--text-font-family);
 }
 .contenedor {
+  position: sticky;
+  z-index: 5;
+  top: 0;
   width: 100%;
   background-color: black;
   display: flex;
@@ -21,8 +24,13 @@ h1 {
   height: 50px;
 }
 .hero {
+  position: relative;
   background-color: #1d75de;
-  background-image: url("/proyectos/promo-p-modulo-1-pair-16-spotify/images/premium_dancer.png");
+  object-fit: contain;
+
+  background-image: url("../images/premium_dancer.png");
+
+  background-size: 30%;
   background-position: 100%, 0;
   background-repeat: no-repeat;
   color: var(--text-color);
@@ -33,6 +41,10 @@ h1 {
 .beneficios {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.titulo2 {
+  position: relative;
 }
 /* .titulo2 {
   display: flex;
@@ -43,19 +55,32 @@ h1 {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  width: 50vw;
+}
+.item1 {
+  border: solid black;
 }
 
-/* .lista1,
-.lista2,
-.lista3,
-.lista4 {
-  list-style: none;
-} */
+.item2 {
+  border: solid black;
+}
+
+.item3 {
+  border: solid black;
+}
+
+.item4 {
+  border: solid black;
+}
+
 .button {
   background-color: green;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   color: white;
   text-align: left;
+}
+.footer {
+  position: relative;
+  color: white;
+  background-color: black;
 }
