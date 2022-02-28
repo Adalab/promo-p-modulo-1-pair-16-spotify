@@ -1,6 +1,12 @@
-h1 {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+.h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
 }
 :root {
   --text-color: white;
@@ -9,6 +15,7 @@ h1 {
 .body {
   font-family: var(--text-font-family);
 }
+
 .contenedor {
   position: sticky;
   z-index: 5;
@@ -17,6 +24,28 @@ h1 {
   background-color: black;
   display: flex;
   justify-content: space-between;
+}
+
+.contenedor-azul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+
+.button {
+  text-align: center;
+  padding: 10px;
+  border-color: transparent;
+  background-color: rgb(25, 173, 94);
+  border-radius: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: white;
+}
+
+.contenedor2 {
+  padding: 20px;
 }
 .main-label {
   margin-inline: 20px;
@@ -27,8 +56,6 @@ h1 {
   position: relative;
   background-color: #1d75de;
   object-fit: contain;
-
-  background-image: url("../images/premium_dancer.png");
 
   background-size: 30%;
   background-position: 100%, 0;
@@ -56,31 +83,50 @@ h1 {
   display: flex;
   flex-wrap: wrap;
 }
-.item1 {
-  border: solid black;
+.imagen {
+  width: 25%;
 }
 
-.item2 {
-  border: solid black;
-}
-
-.item3 {
-  border: solid black;
-}
-
-.item4 {
-  border: solid black;
-}
-
-.button {
-  background-color: green;
-  font-family: Arial, Helvetica, sans-serif;
+.bloque-texto {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
   font-size: 14px;
-  color: white;
-  text-align: left;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: left;
 }
+.item1,
+.item2,
+.item3,
+.item4 {
+  display: flex;
+  flex-direction: row;
+}
+
 .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   position: relative;
   color: white;
   background-color: black;
+}
+.contenedor-footer1 {
+  display: flex;
+  font-size: 10px;
+  background-color: black;
+  color: white;
+}
+
+.contenedor-footer2 {
+  display: flex;
+  font-size: 10px;
+  background-color: black;
+  color: white;
+}
+@media all and (min-width: 480px) {
+  .hero {
+    background-image: url("../images/premium_dancer.png");
+  }
 }
