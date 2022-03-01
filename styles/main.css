@@ -71,7 +71,9 @@
   position: relative;
 }
 .titulo2 {
+  text-align: center;
   position: relative;
+  margin: 10px;
 }
 /* .titulo2 {
   display: flex;
@@ -125,6 +127,31 @@
   background-color: black;
   color: white;
 }
+.contenedor-bandera {
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+}
+.bandera {
+  width: 15px;
+  margin: 0 3px;
+}
+.contenedor-lista1 {
+  display: flex;
+  flex-direction: row;
+  width: 68%;
+  flex-wrap: wrap;
+  padding: 38px 10px 20px 10px;
+}
+
+.item-lista1 {
+  padding: 5px;
+}
+.contenedor-lista2 {
+  list-style: none;
+  padding: 18px 10px 25px 10px;
+}
+
 @media all and (min-width: 480px) {
   .hero {
     background-image: url("../images/premium_dancer.png");
